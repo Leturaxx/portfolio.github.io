@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapira Letura Lisa - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 15px;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #6a11cb;
+      border-bottom: 2px solid #6a11cb;
+      padding-bottom: 3px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+    section.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #2575fc;
+      display: block;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .skills, .projects, .experience, .contact {
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skills:hover, .projects:hover, .experience:hover, .contact:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    ul li {
+      margin: 12px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .projects a {
+      display: block;
+      text-align: center;
+      margin: 12px 0;
+      color: #2575fc;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .projects a:hover {
+      color: #6a11cb;
+    }
+
+    .contact p, .contact a {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+    .contact a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #2575fc;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      header h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#skills">Qualifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Sapira Letura Lisa</h1>
+    <p>Highly skilled and motivated IT professional with expertise in UI/UX design and frontend web development.</p>
+  </header>
+
+  <section class="skills" id="skills">
+    <h2>My Professional Qualifications</h2>
+    <ul>
+      <li>Product Designing</li>
+      <li>UI/UX Designing</li>
+      <li>HTML and CSS</li>
+      <li>GitHub</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Personal Projects (Figma)</h2>
+    <a href="https://www.figma.com/design/QAzdp7PyEzHEtjP8cZ9Hdn/Nexus?node-id=0-1&p=f&t=bhl65v4NZNoRG0Du-0" target="_blank">🔒 Security Service Website</a>
+    <a href="https://www.figma.com/design/9znMuAc6gN0JTYlouIHGy5/Spotify-s-Search-Page--Redesign?node-id=21-607&p=f&t=xy7UgqW1TDFkE7yU-0" target="_blank">🎵 Spotify's Search Page Redesign</a>
+    <a href="https://www.figma.com/design/WDJTJtyd1jqjQVIjpD3szq/Coffee-Shop?node-id=0-1&p=f&t=iaHAhOIU4Mr2fscS-0" target="_blank">☕ Coffee Shop Website</a>
+    <a href="https://www.figma.com/design/UW2LgLwNuMdPrY7DPfvnF1/Trekist?node-id=2-2&p=f&t=1EJSLiZwnf290U0m-0" target="_blank">👟 Shoe Website</a>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>My Experience</h2>
+    <p>
+      I have 3 years of experience in UI/UX design, focusing on creating intuitive and engaging interfaces. My work includes user research, wireframing, prototyping, and visual design aimed at enhancing digital experiences.  
+    </p>
+    <p>
+      I excel at turning complex problems into user-friendly solutions, thrive in teamwork, and bring strong problem-solving, attention to detail, and time management skills to every project.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>📞 Tel: +234-7078XXXXX</p>
+    <p>📧 Email: <a href="mailto:sapiraasil19@gmail.com">sapiraasil19@gmail.com</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/2347088782711" target="_blank">Chat with me</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sapira Letura Lisa. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll Reveal Effect
+    const sections = document.querySelectorAll("section");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add("reveal");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+</body>
+</html>
